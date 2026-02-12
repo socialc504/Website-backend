@@ -8,10 +8,14 @@ export default function Navbar() {
     const [nav, setNav] = useState({})
 
     useEffect(() => {
-        axios.get("http://localhost:5030/nav").then((res) => {
+        axios.get("https://website-backend-production-b98a.up.railway.app/nav").then((res) => {
             // console.log(res.data);
             setNav(res.data)
         })
+        // axios.get("http://localhost:5030/nav").then((res) => {
+        //     // console.log(res.data);
+        //     setNav(res.data)
+        // })
     }, [])
 
     return (

@@ -8,7 +8,7 @@ export default function Contact() {
     const [contact, setContact] = useState({})
 
     useEffect(() => {
-        axios.get("http://localhost:5030/contact").then((res) => {
+        axios.get("https://website-backend-production-b98a.up.railway.app//contact").then((res) => {
             setContact(res.data)
         })
     }, [])

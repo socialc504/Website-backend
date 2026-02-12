@@ -9,7 +9,7 @@ export default function Menu() {
     const [menu, setMenu] = useState({})
 
     useEffect(() => {
-        axios.get("http://localhost:5030/menu").then((res) => {
+        axios.get("https://website-backend-production-b98a.up.railway.app//menu").then((res) => {
             // console.log(res.data)
             setMenu(res.data)
 
